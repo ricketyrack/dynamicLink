@@ -1,0 +1,9 @@
+Buildfile: C:\Users\Rick.wilson\projects\dynamicLink\test\MxTestProject\deployment\build_core.xml
+
+clean:
+   [delete] Deleting directory C:\Users\Rick.wilson\projects\dynamicLink\test\MxTestProject\deployment\model
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+

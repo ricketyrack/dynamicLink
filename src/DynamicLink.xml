@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="loves.dynamiclink.DynamicLink" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Dynamic Link</name>
+    <description>An HTML link that allows expressions to build the URL such as constants.</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="linkText" type="string" required="false">
+                <caption>Link Text</caption>
+                <description>Text to display for the link</description>
+            </property>
+            <property key="link" type="expression" defaultValue="'/'" required="true">
+              <caption>URL</caption>
+              <description>Use constants and context values to build URL</description>
+              <returnType type="String" />
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Visibility">
+          <systemProperty key="Visibility" />
+        </propertyGroup>
+        <propertyGroup caption="Common">
+          <systemProperty key="Name" />
+          <systemProperty key="TabIndex" />
+        </propertyGroup>
+    </properties>
+</widget>
