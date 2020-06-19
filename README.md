@@ -1,17 +1,18 @@
 ## DynamicLink
-[An HTML link that allows expressions to build the URL such as constants.]
+An HTML link that allows expressions to build the URL such as constants.
 
 ## Features
-[feature highlights]
+A pluggable widget for Mendix.
 
 ## Usage
-[step by step instructions]
+From a command prompt (e.g., PowerShell, msys64, cygwin, or bash) type 'npm install' followed by 'npm run dev'.
+NodeJS, npm and a shell are prerequisites.  Of course, Mendix is also required.
 
 ## Demo project
-[link to sandbox]
+Under this repository is test/MxTestProject/DynamicLinkApp.mpr
 
 ## Issues, suggestions and feature requests
-[link to GitHub issues]
+None so far
 
 ## Development and contribution
-[specify contribute]
+Rick Wilson at Loves Travel Stops.
