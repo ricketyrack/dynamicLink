@@ -1,1 +1,9 @@
-[rtlauncher:container$] INFO Container start took 2941. Ready to accept admin requests.
+[rtlauncher:container$] INFO Container start took 2921. Ready to accept admin requests.
+Jun 19, 2020 7:41:31 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose start
+Jun 19, 2020 7:41:31 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose synched
+Jun 19, 2020 7:41:31 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose script done
+Jun 19, 2020 7:41:31 PM org.hsqldb.persist.Logger logInfoEvent
+INFO: checkpointClose end

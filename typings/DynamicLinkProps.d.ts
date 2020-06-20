@@ -4,7 +4,7 @@
  * @author Mendix UI Content Team
  */
 import { CSSProperties } from "react";
-import { DynamicValue } from "mendix";
+import { DynamicValue, WebIcon } from "mendix";
 
 export interface DynamicLinkContainerProps {
     name: string;
@@ -13,6 +13,7 @@ export interface DynamicLinkContainerProps {
     tabIndex: number;
     linkText?: string;
     link: DynamicValue<string>;
+    linkIcon?: DynamicValue<WebIcon>;
 }
 
 export interface DynamicLinkPreviewProps {
@@ -20,4 +21,5 @@ export interface DynamicLinkPreviewProps {
     style: string;
     linkText: string;
     link: string;
+    linkIcon: { type: "glyph"; iconClass: string; } | { type: "image"; imageUrl: string; } | null;
 }

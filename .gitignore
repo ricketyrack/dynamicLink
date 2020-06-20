@@ -2,4 +2,6 @@ dist/
 node_modules/
 *.log
 .env
-**/*.lck
+# emacs work files
+src/*.*#
+test/MxTestProject/deployment/

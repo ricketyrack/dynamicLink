@@ -17,6 +17,10 @@
               <description>Use constants and context values to build URL</description>
               <returnType type="String" />
             </property>
+            <property key="linkIcon" type="icon" required="false">
+              <caption>Icon</caption>
+              <description>Appears next to the link text</description>
+            </property>
         </propertyGroup>
         <propertyGroup caption="Visibility">
           <systemProperty key="Visibility" />

@@ -2,7 +2,7 @@
 An HTML link that allows expressions to build the URL such as constants.
 
 ## Features
-A pluggable widget for Mendix.
+A pluggable widget for Mendix.  Now added mendix Icon to display left of the link text like the mendix Button widget.
 
 ## Usage
 From a command prompt (e.g., PowerShell, msys64, cygwin, or bash) type 'npm install' followed by 'npm run dev'.
@@ -15,4 +15,4 @@ Under this repository is test/MxTestProject/DynamicLinkApp.mpr
 None so far
 
 ## Development and contribution
-Rick Wilson at Loves Travel Stops.
+Rick Wilson at Love's.

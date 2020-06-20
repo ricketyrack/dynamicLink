@@ -3,6 +3,7 @@ import { hot } from "react-hot-loader/root";
 import { ValueStatus } from "mendix";
 import classNames from "classnames";
 import { DynamicLinkContainerProps } from "../typings/DynamicLinkProps";
+import { Icon } from "mendix/components/web/Icon";
 
 import "./ui/DynamicLink.css";
 
@@ -28,7 +29,12 @@ class DynamicLink extends Component<DynamicLinkContainerProps, DynamicLinkState>
         return <a href={this.state.link} target='_blank'
                 className={className}
                 style={this.props.style}
-                tabIndex={this.props.tabIndex}>{this.props.linkText}</a>;
+        tabIndex={this.props.tabIndex}>
+            { !!this.props.linkIcon
+                ? <Icon icon={this.props.linkIcon.value} />
+                : null
+            }
+            {this.props.linkText}</a>;
     }
 }
 

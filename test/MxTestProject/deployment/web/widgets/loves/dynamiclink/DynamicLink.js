@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
+		module.exports = factory(require("mendix/components/web/Icon"), require("react"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
+		define(["mendix/components/web/Icon", "react"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("react")) : factory(root["react"]);
+		var a = typeof exports === 'object' ? factory(require("mendix/components/web/Icon"), require("react")) : factory(root["mendix/components/web/Icon"], root["react"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
-})(window, function(__WEBPACK_EXTERNAL_MODULE_react__) {
+})(window, function(__WEBPACK_EXTERNAL_MODULE_mendix_components_web_Icon__, __WEBPACK_EXTERNAL_MODULE_react__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	function hotDisposeChunk(chunkId) {
 /******/ 		delete installedChunks[chunkId];
@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "3f1a40f099675b95394e";
+/******/ 	var hotCurrentHash = "aa51c73ee8926d8de52e";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1603,7 +1603,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __extends = 
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! react */ "react"), __webpack_require__(/*! react-hot-loader/root */ "./node_modules/@mendix/pluggable-widgets-tools/configs/hot.js"), __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"), __webpack_require__(/*! ./ui/DynamicLink.css */ "./src/ui/DynamicLink.css")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, react_1, root_1, classnames_1) {
+!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! react */ "react"), __webpack_require__(/*! react-hot-loader/root */ "./node_modules/@mendix/pluggable-widgets-tools/configs/hot.js"), __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"), __webpack_require__(/*! mendix/components/web/Icon */ "mendix/components/web/Icon"), __webpack_require__(/*! ./ui/DynamicLink.css */ "./src/ui/DynamicLink.css")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports, react_1, root_1, classnames_1, Icon_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     classnames_1 = __importDefault(classnames_1);
@@ -1621,7 +1621,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
         };
         DynamicLink.prototype.render = function () {
             var className = classnames_1.default("dynamiclink", this.props.class);
-            return react_1.createElement("a", { href: this.state.link, target: '_blank', className: className, style: this.props.style, tabIndex: this.props.tabIndex }, this.props.linkText);
+            return react_1.createElement("a", { href: this.state.link, target: '_blank', className: className, style: this.props.style, tabIndex: this.props.tabIndex },
+                !!this.props.linkIcon
+                    ? react_1.createElement(Icon_1.Icon, { icon: this.props.linkIcon.value })
+                    : null,
+                this.props.linkText);
         };
         return DynamicLink;
     }(react_1.Component));
@@ -1684,6 +1688,17 @@ if(true) {
 
 	module.hot.dispose(function() { update(); });
 }
+
+/***/ }),
+
+/***/ "mendix/components/web/Icon":
+/*!*********************************************!*\
+  !*** external "mendix/components/web/Icon" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_mendix_components_web_Icon__;
 
 /***/ }),
 
