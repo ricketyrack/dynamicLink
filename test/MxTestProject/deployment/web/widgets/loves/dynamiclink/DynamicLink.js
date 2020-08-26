@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "aa51c73ee8926d8de52e";
+/******/ 	var hotCurrentHash = "11977284398cbabb6fc4";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1625,7 +1625,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
                 !!this.props.linkIcon
                     ? react_1.createElement(Icon_1.Icon, { icon: this.props.linkIcon.value })
                     : null,
-                this.props.linkText);
+                react_1.createElement("span", { style: { paddingLeft: 5 } }, this.props.linkText));
         };
         return DynamicLink;
     }(react_1.Component));

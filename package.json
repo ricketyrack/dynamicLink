@@ -1,7 +1,7 @@
 {
   "name": "dynamiclink",
   "widgetName": "DynamicLink",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An HTML link that allows expressions to build the URL such as constants.",
   "copyright": "2020 Loves Travel Stops",
   "author": "Rick Wilson",

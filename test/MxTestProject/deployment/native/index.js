@@ -2,7 +2,7 @@ import { NativeUI, startApp, t } from "mendix/native";
 import { navigationStyle } from "C:/Users/Rick.wilson/projects/dynamicLink/test/MxTestProject/theme/styles.js";
 
 startApp({
-    "cacheBust": "637281926148848823",
+    "cacheBust": "637283408473492231",
     "languages": [
         "en_US"
     ],

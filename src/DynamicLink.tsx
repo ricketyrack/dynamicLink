@@ -29,12 +29,15 @@ class DynamicLink extends Component<DynamicLinkContainerProps, DynamicLinkState>
         return <a href={this.state.link} target='_blank'
                 className={className}
                 style={this.props.style}
-        tabIndex={this.props.tabIndex}>
-            { !!this.props.linkIcon
-                ? <Icon icon={this.props.linkIcon.value} />
-                : null
-            }
-            {this.props.linkText}</a>;
+                tabIndex={this.props.tabIndex}>
+
+                { !!this.props.linkIcon
+                    ? <Icon icon={this.props.linkIcon.value} />
+                   : null
+                }
+               <span style={{ paddingLeft: 5 }} >
+                   {this.props.linkText}
+               </span></a>;
     }
 }
 

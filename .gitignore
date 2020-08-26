@@ -4,4 +4,4 @@ node_modules/
 .env
 # emacs work files
 src/*.*#
-test/MxTestProject/deployment/
+test/
